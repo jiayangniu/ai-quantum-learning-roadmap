@@ -1,16 +1,16 @@
 # AI × Quantum Learning Roadmap
 
-### 一年打基础，长期积累研究判断力
+### 半年打基础，长期积累研究判断力
 
 **AI / RL for Quantum Systems & Software** 为主线；以 **IR / RecSys / Agentic Search** 建立第二能力栈，探索量子优化与检索推荐的交叉问题。
 
 | 学习周期 | 每周预算 | 主资源 | 实践方式 |
 | :--- | :--- | :--- | :--- |
-| 12 个月，按实际开始日期计算 | 约 9 小时 | 6 套，按模块选学 | 1 个持续演进的主项目 |
+| 6 个月，约 26 周 | 15 小时 | 6 套，按模块选学 | 1 个持续演进的主项目 |
 
 ## 从这里开始
 
-1. **看全局** → [一年路线图](ROADMAP.md)
+1. **看全局** → [半年路线图](ROADMAP.md)
 2. **知道学什么** → [六套课程与知识地图](COURSES.md)
 3. **开始第一月** → [M01 · ML 与量子基础](months/01-foundations/README.md)
 4. **记录真实进展** → [进度面板](PROGRESS.md)
@@ -48,7 +48,7 @@
 
 ```text
 README.md               导航与学习约定
-ROADMAP.md              一年高层计划
+ROADMAP.md              半年高层计划
 COURSES.md              课程知识地图、选读范围与覆盖检查
 MATERIAL_VERSIONS.md     材料版本、来源与访问限制
 PROGRESS.md             当前进展与下一步

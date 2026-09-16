@@ -1,6 +1,6 @@
-# 一年学习路线
+# 半年学习路线
 
-学习周期：12 个月 · 更新 2026-09-16
+学习周期：6 个月 · 每周 15 小时 · 更新 2026-09-16
 
 [首页](README.md) · [课程与知识地图](COURSES.md) · [第一个月](months/01-foundations/README.md)
 
@@ -10,46 +10,58 @@
 
 ## 六套主资源
 
-| 主资源 | 负责的知识 | 安排 |
-|---|---|---|
-| 1. D2L | ML/DL、泛化、优化、表示、attention/Transformer | M01–M03 |
-| 2. Watrous 量子信息讲义 / IBM 配套课程 | 态/测量/纠缠、算法、密度矩阵/信道、QEC | M01–M05，之后查阅 |
-| 3. Berkeley CS285 | Deep RL、PPO/SAC、探索、model-based/offline、LLM RL 概览 | M04–M06；M11 定向回看 |
-| 4. MARL Book | RL 基础复习；games、CTDE、credit assignment、deep MARL | M04 用第 2 章；M07–M08 学 MARL |
-| 5. Personalized Machine Learning | 推荐、协同过滤、隐因子、内容与序列 | M09–M10 |
-| 6. Hugging Face Agents Course | tools、planning、Agentic RAG、evaluation | M11 |
+| 主资源 | 核心知识 | 学习阶段 |
+| :--- | :--- | :--- |
+| D2L | ML/DL、泛化、反传、优化、表示、attention/Transformer | M01–M02 |
+| Watrous / IBM 量子系列 | 态、测量、纠缠、密度矩阵、信道、算法、QEC | M01–M03 |
+| Berkeley CS285 | PG/actor-critic、DQN、PPO/SAC、探索、model-based/offline RL | M02 基础准备；M03 核心方法；M06 后训练 |
+| MARL Book | MDP、games、Dec-POMDP、CTDE、信用分配、MAPPO/QMIX | M02 第 2 章；M04 多智能体 |
+| Personalized Machine Learning | 协同过滤、隐因子、隐式反馈、内容与序列推荐 | M05 |
+| Hugging Face Agents | 工具、规划、记忆、Agentic RAG、验证与评价 | M06 |
 
-课程链接、知识地图及具体选学内容见 [课程指南](COURSES.md)。版本依据见 [版本与来源](MATERIAL_VERSIONS.md)。
+课程的知识地图、先修和选读章节见 [课程指南](COURSES.md)，材料版次见 [版本档案](MATERIAL_VERSIONS.md)。
 
-## 12 个月
+## 六个月安排
 
-| 月 | 主要学习 | 量子 / 应用线 |
-|---|---|---|
-| M01 | D2L：损失、数据划分、泛化、基础模型 | Watrous：单/多系统、测量、电路 |
-| M02 | D2L：MLP、反传机制、优化与正则化 | Watrous：纠缠、密度矩阵、信道 |
-| M03 | D2L：attention/Transformer；相关数学工具 | Watrous：量子算法代表工具与机制 |
-| M04 | MARL Book 第 2 章 RL 基础 → CS285 RL Basics；确认 DP/MC/TD | Watrous：QEC 基础 |
-| M05 | CS285：PG、actor-critic、value-based 方法 | QEC stabilizer；编译/硬件约束短模块 |
-| M06 | CS285：PPO/SAC、探索；model-based/offline 概览 | AI for Quantum 任务地图与项目选题 |
-| M07 | MARL Book：games、局部观测、CTDE、信用分配 | 一篇与主项目直接相关的论文 |
-| M08 | MARL Book：MAPPO/QMIX、实践与消融 | 量子主项目最小基线比较 |
-| M09 | IIR 指定章节＋dense retrieval 短教程；进入 PML | 量子主项目迭代 |
-| M10 | PML：推荐主干、内容/序列概览、评价 | QUBO/Ising 建模短模块 |
-| M11 | HF Agents：一个框架、RAG、验证/评估；CS285 后训练回看 | QAOA/变分工作流短模块 |
-| M12 | 主项目收尾、知识综合、年度回顾 | AI for Quantum 或量子优化交叉择一深入 |
+每个学习月包含 4 个学习周，共 60 小时。主线 32h、量子/应用线 20h、前沿与复盘 8h；实践包含在对应学习线内。
 
-## 时间与产出
+| 月份 | 主线 · 32h | 量子 / 应用线 · 20h | 阶段目标 |
+| :--- | :--- | :--- | :--- |
+| M01 | ML 任务、数据划分、泛化、正则化、分类；MLP 与反传入门 | 单/多系统、测量、电路、Bell 态；密度矩阵入门 | 解释训练流程与两 qubit 电路，完成一个小验证 |
+| M02 | D2L：优化、归一化、CNN/RNN 概览、attention/Transformer（20h）；MARL 第 2 章与 CS285：MDP/value、DP/MC/TD、on/off-policy（12h） | 纠缠协议、密度矩阵、信道；oracle、Fourier/phase estimation、搜索等算法机制 | 解释表示与优化，比较 RL 基础更新，理解量子算法与噪声的作用 |
+| M03 | CS285：DQN、PG、actor-critic、PPO/SAC；探索、model-based/offline 概览 | Watrous QEC：syndrome、可纠正性、stabilizer、decoder/logical error；硬件约束与编译模块 B | 分析 RL 稳定性，解释纠错与编译流程；比较一个现成算法或编译设置 |
+| M04 | MARL：games、Dec-POMDP、非平稳性、CTDE、信用分配、MAPPO/QMIX | AI for Quantum 模块 C（8h）；主项目选题、论文与最小基线（12h） | 比较单/多智能体建模，确定研究问题、强基线、指标与预算 |
+| M05 | IR 模块 A（10h）；PML 推荐主干、内容/序列概览（16h）；系统与评估模块 E（6h） | QUBO/Ising、约束与 penalty、经典求解比较（模块 D，8h）；主项目迭代（12h） | 解释检索推荐流程与评价偏差；验证小规模约束编码 |
+| M06 | HF Agents：一个框架、工具、RAG、规划/记忆、失败恢复与评价（24h）；CS285 后训练：SFT、偏好/奖励、RL、reward hacking（8h） | 变分工作流、QAOA/annealing 概览（模块 D，8h）；主项目分析与总结（12h） | 评价 Agent 的正确性与成本，完成项目报告及半年知识回顾 |
 
-每周约 9h：主线 5h，量子/应用 3h，前沿与回顾 1h。实践和补充阅读计入对应学习线。48 学习周＋4 机动周；缺口先占机动时间，必要时顺延。
+每月前沿与复盘 8h 用于关联研究问题、检查理解与更新知识库。
 
-全年围绕 **一个持续演进的主项目** 积累实践结果，课程例子用于验证具体概念。候选方向包括量子电路搜索/编译和约束推荐重排。
+## 每周节奏
 
-## 课程导览
+| 学习块 | 时间 | 内容 |
+| :--- | ---: | :--- |
+| 主线阅读 | 3h | 核心章节与知识关系 |
+| 主线实践 | 3h | 课程例子、代码阅读或对照实验 |
+| 主线复习 | 2h | 先修补缺、概念解释与自检 |
+| 量子 / 应用阅读 | 3h | 量子课程、专题材料或项目论文 |
+| 量子 / 应用实践 | 2h | 数值例子、建模与主项目 |
+| 前沿与复盘 | 2h | 研究关联 1h，周回顾 1h |
+| **合计** | **15h** | 可分为每周 5 次、每次 3h |
+
+## 总预算与机动周
+
+**24 个学习周 × 15h = 360h；2 个机动周 × 15h = 30h；总计约 390h。** 六个月按约 26 周估算，实际日期在开始时填写。两个机动周可分别安排在 M03 后和 M06 末，用于补缺、重跑实验和综合回顾。
+
+按章节与知识点选读。ML/RL 基础、态与测量、信道/QEC、评价与经典基线达到可解释和可验证的程度；算法复杂度证明、进阶信息论、model-based/offline RL、CNN/RNN、序列推荐与 annealing 先建立概览，再按项目需要深入。
+
+## 主项目
+
+M01–M03 通过课程例子积累基础；M04 确定一个问题，M04–M06 每月安排 12h 推进，共 36h。候选方向包括学习辅助量子电路搜索/编译和量子优化与约束推荐重排。
+
+项目交付包括：问题定义、可复现的最小基线、至少一次受控比较、结果与限制。复用成熟实现，将时间集中在建模、评价和结果分析。
+
+## 课程导览与知识库
 
 每门课从知识地图开始：核心知识 → 模块关系 → 先修知识 → 重点与选读 → 材料版本 → 学习目标。使用 [课程导览模板](templates/course-orientation.md) 记录。
 
-## 知识覆盖与深度
-
-[课程指南](COURSES.md) 中的覆盖表对应数学、ML、DL、RL、MARL、量子基础、QEC/编译、AI for Quantum、IR/RecSys、Agent 与量子优化。
-
-主线方法需要能解释和评价；其他分支建立概念框架与证据意识。深入内容由主项目的问题决定。每月根据学习结果细化下一阶段的章节、实践与复习安排。
+[课程指南](COURSES.md#核心知识覆盖检查) 将数学、ML、DL、RL、MARL、量子基础、QEC/编译、AI for Quantum、IR/RecSys、Agent 与量子优化对应到材料和理解目标。按主题保存概念与实验，每月根据学习结果细化下一阶段安排。

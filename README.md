@@ -45,15 +45,17 @@
 
 ## 首月周索引
 
-### W1 · ML 与单量子系统
+### W1 · 单量子系统 → ML 基础
 
 | 知识点 | 教材位置 |
 | :--- | :--- |
-| 课程知识地图 | [D2L 目录](https://d2l.ai/)；[Watrous Basics 目录](https://quantum.cloud.ibm.com/learning/en/courses/basics-of-quantum-information) |
-| 数据划分、损失、泛化 | [D2L §3.6 Generalization](https://d2l.ai/chapter_linear-regression/generalization.html) |
-| 模型与训练流程 | D2L 第 3 章：Linear Neural Networks for Regression |
-| 张量形状、概率、自动微分 | D2L 第 2 章：Preliminaries |
-| 量子态、振幅、概率、Unitary、测量 | [Watrous Basics · Single Systems](https://quantum.cloud.ibm.com/learning/en/courses/basics-of-quantum-information/single-systems/introduction) |
+| 单系统：经典状态与操作、量子态、测量、酉操作 | [Watrous Basics · Single Systems](https://quantum.cloud.ibm.com/learning/en/courses/basics-of-quantum-information/single-systems/introduction) |
+| ML 课程知识地图 | [D2L 全书目录](https://d2l.ai/) |
+| 数据准备：张量、形状、索引、广播、数据预处理 | [D2L §2.1 Data Manipulation](https://d2l.ai/chapter_preliminaries/ndarray.html)、[§2.2 Data Preprocessing](https://d2l.ai/chapter_preliminaries/pandas.html) |
+| 自动微分：梯度计算与累积 | [D2L §2.5 Automatic Differentiation](https://d2l.ai/chapter_preliminaries/autograd.html)；线代与概率按需查 §2.3、§2.6 |
+| 回归模型：特征、标签、预测、损失、梯度下降 | [D2L §3.1 Linear Regression](https://d2l.ai/chapter_linear-regression/linear-regression.html)（模型与训练机制） |
+| 训练流程：数据批次、模型、损失、优化器、参数更新 | [D2L §3.5 Concise Implementation](https://d2l.ai/chapter_linear-regression/linear-regression-concise.html)；代码依赖按需查 §3.2–3.3 |
+| 泛化：训练/验证/测试、模型复杂度、欠拟合与过拟合 | [D2L §3.6 Generalization](https://d2l.ai/chapter_linear-regression/generalization.html) |
 
 ### W2 · 分类与复合量子系统
 

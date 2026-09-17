@@ -83,3 +83,7 @@
 | 模型容量、正则化与训练机制 | D2L §3.6–3.7、第 5 章 |
 | General Formulation 知识地图 | [Watrous 讲义](https://arxiv.org/abs/2507.11536)：General Formulation of Quantum Information |
 | 纯态密度矩阵、混合态、Trace、测量概率 | Watrous General Formulation：Density Matrices |
+
+## 项目核查
+
+- [梯度传播：AI 与研究者共同核查流程](checklists/gradient-flow.md)
